@@ -7,6 +7,6 @@ msg = f"last digit of {number} is {last_num}"
 if last_num == 0:
     print(f"{msg} and is 0")
 elif last_num > 5 and last_num % 10 != 0:
-    print(f"{msg} and is greater thab 5")
+    print(f"{msg} and is greater than 5")
 else:
-    print(f"{msg} and is less that 6 and not 0")
+    print(f"{msg} and is less than 6 and not 0")
