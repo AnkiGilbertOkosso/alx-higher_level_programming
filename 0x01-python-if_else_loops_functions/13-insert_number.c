@@ -17,7 +17,7 @@ listint_t *insert_node(listint_t **head, int number)
 
 	if (head == NULL)
 		return (NULL);
-	begin = malloc(sizepf(listint_t));
+	begin = malloc(sizeof(listint_t));
 	if (!begin)
 		return (NULL);
 	begin->n = number, begin->next = NULL;
@@ -27,7 +27,7 @@ listint_t *insert_node(listint_t **head, int number)
 		return (*head);
 	}
 	normal = *head;
-	if (nummber <= normal->n)
+	if (number <= normal->n)
 	{
 		begin->next = normal, *head = begin;
 		return (*head);
