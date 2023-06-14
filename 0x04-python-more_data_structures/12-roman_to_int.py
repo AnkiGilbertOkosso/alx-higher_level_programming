@@ -29,7 +29,7 @@ def roman_to_int(roman_string):
             if n == i:
                 if roman_number.get(i) <= first_roman:
                     num += to_sub(data)
-                    data = [roman_number.gget(i)]
+                    data = [roman_number.get(i)]
                 else:
                     data.append(roman_number.get(i))
 
