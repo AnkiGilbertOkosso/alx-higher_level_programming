@@ -5,6 +5,6 @@ def uniq_add(my_list=[]):
     num = 0
 
     for n in lists:
-        num += 0
+        num += o
 
     return (num)
