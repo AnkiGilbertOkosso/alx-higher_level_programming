@@ -10,14 +10,24 @@ def to_sub(data):
 
     return (max_list - sub)
 
+
 def roman_to_int(roman_string):
+
     if not roman_string:
         return 0
 
     if not isinstance(roman_string, str):
         return 0
 
-    roman_number = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
+    roman_number = {
+            'I': 1,
+            'V': 5,
+            'X': 10,
+            'L': 50,
+            'C': 100,
+            'D': 500,
+            'M': 1000
+    }
     lists = list(roman_number.keys())
 
     num = 0
