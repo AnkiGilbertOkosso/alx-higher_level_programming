@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 Create a Class Square with:
-- size proprety
+- size and position private proprety
 - method of area and method of print_square
 - getters & setters.
 """
@@ -20,7 +20,7 @@ class Square:
         return (self.__size ** 2)
 
     def my_print(self):
-        """Mthd to print a Square"""
+        """Method to print a Square"""
         if (self.__size == 0):
             print()
         else:
