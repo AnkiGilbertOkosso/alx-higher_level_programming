@@ -56,7 +56,7 @@ void print_python_bytes(PyObject *p)
 	printf("  first %zd bytes:", size < 10 ? size + 1 : 10);
 	while (num < size + 1 && num < 10)
 	{
-		printf(" %02hhx", stri[num]);
+		printf(" %02hhx", str[num]);
 		num++;
 	}
 	printf("\n");
