@@ -10,14 +10,10 @@ Create a Class Square with:
 class Square:
     """For Class Square"""
 
-    def __init__(self, size=0):
-        """This is a Square with the size"""
-        if (type(size) is not int):
-            raise (TypeError("size must be an integer"))
-        elif (size < 0):
-            raise (ValueError("size must be >= 0"))
-        else:
-            self.__size = size
+    def __init__(self, size=0, position=(0, 0)):
+        """This is a Square with the size and position"""
+        self.size = size
+        self.postion = position
 
     def area(self):
         """getting the area of the Square"""
@@ -28,7 +24,10 @@ class Square:
         if (self.__size == 0):
             print()
         else:
-            for rows in range(self.__size):
+            for i in range(self.postion[1]):
+                print()
+            for n in range(self.__size):
+                print(" " * self.postion[0], end='')
                 print("#" * self.__size)
 
     @property
