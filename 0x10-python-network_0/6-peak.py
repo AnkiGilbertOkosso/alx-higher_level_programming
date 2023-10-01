@@ -22,4 +22,3 @@ def find_peak(list_of_integers):
         return find_peak(list_of_integers[y:])
     if y > 0 and list_of_integers[y] < list_of_integers[y - 1]:
         return find_peak(list_of_integers[:y])
-
