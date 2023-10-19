@@ -1,7 +1,7 @@
 
 # 0x0D. SQL - Introduction
 
-**Author:** Your Name
+**Author:** Anki Gilbert Okosso
 **Date:** October 17, 2023
 
 Welcome to my SQL Introduction project repository! This project focuses on various SQL concepts and tasks using MySQL on an Ubuntu 20.04 LTS server. Here, I will guide you through the tasks I completed for this project.
@@ -75,7 +75,7 @@ mysql -hlocalhost -uroot -p < 2-remove_database.sql
 
 ### Task 3: List Tables
 
-I wrote a script to list all the tables in a specific database. Replace `hbtn_0c_0` with your database name and run the following command:
+I wrote a script to list all the tables in a specific database. To run the following command:
 
 ```shell
 mysql -hlocalhost -uroot -p hbtn_0c_0 < 3-list_tables.sql
