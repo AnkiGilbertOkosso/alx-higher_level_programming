@@ -16,6 +16,7 @@ if __name__ == "__main__":
                 port=3306
     )
     cursor = database.cursor()
+    search_name = sys.argv[4]
     query = "SELECT * FROM states WHERE name = %s ORDER BY id ASC"
     cursor.execute(query, (search_name,))
     matching_states = cursor.fetchall()
