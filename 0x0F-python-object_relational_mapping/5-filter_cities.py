@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-Lists all cities of a given state from the database hbtn_0e_4_usa (SQL injection free).
+Lists all cities of a given state from the
+database hbtn_0e_4_usa (SQL injection free).
 """
 import MySQLdb
 import sys
