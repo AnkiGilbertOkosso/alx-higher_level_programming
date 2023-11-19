@@ -8,6 +8,7 @@ from sqlalchemy.ext.declarative import declarative_base
 custom_metadata = MetaData()
 Base = declarative_base(metadata=custom_metadata)
 
+
 class State(Base):
     """
     Class with id and name attributes of each state
