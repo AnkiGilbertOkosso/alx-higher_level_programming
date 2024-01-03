@@ -9,7 +9,7 @@ httpRequest(apiUrl, function (error, response, body) {
   }
 });
 
-function printCharacters(charactersList, index) {
+function printCharacters (charactersList, index) {
   httpRequest(charactersList[index], function (error, response, body) {
     if (!error) {
       console.log(JSON.parse(body).name);
