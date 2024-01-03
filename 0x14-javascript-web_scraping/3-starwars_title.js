@@ -2,7 +2,7 @@
 
 const httpRequest = require('request');
 const episodeNum = process.argv[2];
-const API_URL = 'https://swapi-api.alx-tools.com/api/films/${episodeNum}';
+const API_URL = 'https://swapi-api.alx-tools.com/api/films/';
 
 httpRequest(API_URL + episodeNum, function (error, res, body) {
   if (error) {
