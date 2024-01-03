@@ -1,6 +1,6 @@
 #!/usr/bin/node
 const httpRequest = require('request');
-const filmUrl = 'https://swapi-api.alx-tools.com/api/' + process.argv[2];
+const filmUrl = 'https://swapi-api.alx-tools.com/api/films/' + process.argv[2];
 httpRequest(filmUrl, function (err, res, body) {
   if (!err) {
     const characters = JSON.parse(body).characters;
